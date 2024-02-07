@@ -9,5 +9,13 @@ export default defineNuxtConfig({
     define: {
       'process.env.DEBUG': false
     }
-  }
+  },
+  components: {
+    dirs: [
+      {
+        path: '~/components',
+        pathPrefix: false
+      }
+    ]
+  },
 })
